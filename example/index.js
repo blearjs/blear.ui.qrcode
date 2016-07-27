@@ -8,5 +8,15 @@
 'use strict';
 
 
+var QRCode = require('../src/index');
 
+var qrcode = new QRCode({
+    el: '#ret'
+});
 
+var textareaEl = document.querySelector('#textarea');
+var renderEl = document.querySelector('#render');
+
+renderEl.onclick = function () {
+    qrcode.render(textareaEl.value);
+};
