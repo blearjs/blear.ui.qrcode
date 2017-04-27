@@ -4,6 +4,8 @@
 [![build status][travis-img]][travis-url]
 [![coverage][coveralls-img]][coveralls-url]
 
+<https://blear.ydr.me/ui/qrcode>
+
 [travis-img]: https://img.shields.io/travis/blearjs/blear.ui.qrcode/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/blearjs/blear.ui.qrcode
 

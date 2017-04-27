@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.qrcode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "二维码 UI 生成器",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
@@ -8,7 +8,7 @@
   "preferGlobal": false,
   "bin": {},
   "engines": {
-    "node": ">=1.0.0",
+    "node": ">=6.0.0",
     "iojs": ">=1.0.0"
   },
   "main": "src/index.js",

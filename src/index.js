@@ -2,6 +2,7 @@
  * blear.ui.qrcode
  * @author ydr.me
  * @create 2016年06月04日14:09:36
+ * @update 2017年04月27日15:06:04
  */
 
 'use strict';
@@ -33,14 +34,19 @@ var QRCode = UI.extend({
     },
 
 
-    render: function (data) {
+    /**
+     * 渲染文本为二维码
+     * @param text {String} 文本
+     * @returns {QRCode}
+     */
+    render: function (text) {
         var the = this;
 
-        the[_qrcodeGenerator].draw(data);
+        the[_qrcodeGenerator].draw(text);
         var el = the[_renderByCanvas]();
         modification.empty(the[_container]);
         modification.insert(el, the[_container]);
-        return el;
+        return the;
     }
 });
 var _options = QRCode.sole();
