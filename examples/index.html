@@ -18,17 +18,32 @@
     <meta name="description" content="描述语句">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <title>index.html</title>
+    <style>
+        textarea {
+            display: block;
+            width: 90%;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        button {
+            border: 1px solid #ccc;
+            font-size: 18px;
+            padding: 4px 8px;
+        }
+    </style>
 </head>
 <body ontouchstart="">
 
 <textarea id="textarea" rows="10"></textarea>
 <button id="render">渲染</button>
 <hr>
+<div id="time">...</div>
 <div id="ret"></div>
 
 
 <script src="/node_modules/coolie.js/coolie.js"
-data-config="/example/coolie-config.js"
+data-config="/examples/coolie-config.js"
 data-main="index.js"></script>
 
 </body>
